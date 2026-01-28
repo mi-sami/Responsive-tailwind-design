@@ -1,0 +1,170 @@
+@import "tailwindcss";
+
+@layer components{
+
+    @theme{
+        --color-average:#dbd8d8;
+        --color-btn1:#f2f1fc;
+    }
+
+    *{
+        box-sizing: border-box;
+    }
+
+    .navbar{
+        @apply p-[1rem]  sticky top-0 border-b-2 bg-average border-average;
+    }
+
+    .navbar-container{
+
+        @apply  ml-7 md:flex justify-between;
+    }
+
+    .logo-container{
+
+        @apply h-12;
+    }
+
+    .nav-right{
+
+        @apply mr-[30px] mt-2; 
+    }
+
+    .option-container{
+
+        @apply flex p-1 gap-12;
+    }
+
+    .links {
+    @apply text-2xl font-semibold;
+}
+
+.links:hover {
+    @apply text-gray-600;
+}
+
+    /* Hero Section */
+
+   .container {
+    @apply w-full  ml-auto mr-auto  sm:w-[620px] md:w-[738px] lg:w-[1000px] xl:w-[1220px] 2xl:w-[1500px] ;
+}
+
+.hero-container{
+    @apply flex flex-col justify-center align-middle ; 
+}
+
+.title{
+    @apply text-center mt-6;
+}
+
+.titlebar{
+    @apply text-4xl font-bold;
+}
+
+.small-description{
+    @apply m-6 text-center;
+}
+
+.small-descripptionbar{
+    @apply text-[16px];
+}
+
+.hero-image img {
+  @apply w-full  h-auto rounded-2xl;
+}
+
+
+.buttons {
+    @apply flex flex-col justify-center gap-0
+    md:flex md:flex-row md:gap-4;
+}
+
+
+.btn1{
+    @apply bg-gray-300 pl-[80px] pr-[80px] pt-[12px] pb-[12px] rounded-2xl mt-10 border-2 border-transparent ;
+}
+
+.btn2{
+    
+    @apply bg-black pl-[85px] pr-[85px] pt-[12px] pb-[12px] rounded-2xl mt-10 text-white 
+    border-2 border-transparent  hover:bg-gray-700  ;
+}
+
+
+.btn1:hover{
+    background-color: rgb(199, 195, 195);
+    
+
+    @apply text-black;
+}
+
+/* Product Section */
+
+.product-container{
+    @apply flex flex-col  justify-center items-center mt-[100px] md:flex md:flex-row gap-5 ;
+}
+
+/* .products{
+@apply h-[00px]
+} */
+
+.product-image{
+@apply mb-7;
+}
+
+.products-title{
+    @apply mt-2 mb-2;
+}
+
+.product-title{
+    @apply font-bold text-[20px] ;
+}
+
+.products-description{
+    @apply mb-7 ;
+}
+
+/* Share company section */
+
+.company-subcontainer{
+    @apply w-[200px] ml-auto mr-auto grid grid-cols-2 gap-7 md:grid-cols-6 md:w-[760px] md:mt-16 ;
+}
+
+/* Footer section */
+
+.footer{
+    @apply bg-black mt-6;
+}
+
+.footer-container{
+    @apply pt-5  gap-16 md:grid md:grid-cols-3 md:pl-5 ;
+}
+
+.footer-list{
+    @apply ml-15 mb-5; 
+}
+
+.catagory{
+    @apply text-white text-2xl mb-3; 
+}
+
+.links-footer{
+    @apply text-average p-[5px] hover:text-blue-700 hover:bg-gray-600 ;
+}
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+}
+
+/* npx @tailwindcss/cli -i ./input.css -o ./output.
+css --watch */
